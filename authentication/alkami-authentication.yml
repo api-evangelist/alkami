@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alkami.com/build-with-us/developers/
+docs: https://developer.alkami.com
+summary:
+  types: [openIdConnect]
+  oauth2_flows: []
+  note: >-
+    Alkami documents that its digital-banking APIs are "built on OpenID Connect,
+    providing secure authentication without exposing PII." Full authentication
+    details (endpoints, flows, scopes, client registration) are published inside
+    the gated Alkami DevPortal at developer.alkami.com and are not available on
+    the public marketing surface.
+schemes:
+- name: openIdConnect
+  type: openIdConnect
+  description: >-
+    OpenID Connect based authentication for Alkami's D2C, B2B, and Open Banking
+    REST APIs. Discovery/issuer details are provided to authorized financial
+    institutions and fintech partners in the DevPortal.
+  sources:
+  - https://www.alkami.com/build-with-us/developers/
