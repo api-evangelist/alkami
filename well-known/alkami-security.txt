@@ -1,0 +1,7 @@
+# Security vulnerabilities should be reported via our Vulnerability Disclosure Program, managed in partnership with HackerOne.
+ 
+Contact: https://hackerone.com/8abb4972-7a0a-4319-abbf-ef7a41243e3c/embedded_submissions/new?locale=en
+Preferred-Languages: en
+ 
+Hiring: https://alkami.com/careers
+ 

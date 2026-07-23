@@ -1,0 +1,20 @@
+generated: '2026-07-17'
+method: searched
+host: https://www.alkami.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: alkami-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  developer.alkami.com hosts the "Alkami DevPortal" single-page app; its
+  /.well-known/openid-configuration and /.well-known/oauth-authorization-server
+  paths return the SPA HTML shell (HTTP 200) rather than a real discovery
+  document, so they are not captured as well-known JSON.

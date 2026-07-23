@@ -1,7 +1,17 @@
 aid: alkami
 name: Alkami
-description: 'Alkami is a company surfaced as a portfolio company of d1-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Alkami Technology (NASDAQ: ALKT) is a Plano, Texas based cloud digital banking
+  platform for U.S. banks and credit unions. Through its "Alkami Foundry"
+  developer program it exposes RESTful APIs and an extensible SDK — spanning
+  authentication, money movement, data access, and real-time and batch workflows
+  — that financial institutions and fintech partners use to embed and extend
+  digital-banking experiences. The APIs are grouped into D2C (embed fintech
+  experiences), B2B (automate backend workflows), and Open Banking (third-party
+  connections such as Plaid) surfaces, are built on OpenID Connect, and are
+  delivered through a gated DevPortal rather than an open public API. Alkami was
+  surfaced as a portfolio company of D1 Capital and enriched by the API
+  Evangelist pipeline from its public developer, security, and legal surfaces.
 url: https://raw.githubusercontent.com/api-evangelist/alkami/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,13 +19,43 @@ x-backed-by:
 - d1-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://www.alkami.com/wp-content/uploads/2023/01/alkami-logo.svg
 tags:
 - Company
 - Fintech
-apis: []
+- Digital Banking
+- Banking
+- Credit Unions
+- Financial Services
+- Open Banking
+- APIs
+- SDK
+apis:
+- name: Alkami Digital Banking API
+  description: >-
+    Alkami's RESTful digital-banking APIs (D2C, B2B, and Open Banking) plus the
+    Alkami SDK, built on OpenID Connect and documented in the gated Alkami
+    DevPortal.
+  humanURL: https://www.alkami.com/build-with-us/developers/
+  baseURL: https://api.alkami.com
+  properties:
+  - type: Authentication
+    url: authentication/alkami-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +64,34 @@ maintainers:
 common:
 - type: Website
   url: https://www.alkami.com
+- type: DeveloperPortal
+  url: https://developer.alkami.com
+- type: Documentation
+  url: https://www.alkami.com/build-with-us/developers/
+- type: Blog
+  url: https://www.alkami.com/blog/
+- type: Support
+  url: https://www.alkami.com/contact-us/
+- type: PrivacyPolicy
+  url: https://www.alkami.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/Alkami
+- type: Authentication
+  url: authentication/alkami-authentication.yml
+- type: SecurityTxt
+  url: well-known/alkami-security.txt
+- type: WellKnown
+  url: well-known/alkami-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/alkami-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.alkami.com/tools/Vulnerability-Disclosure.html
+- type: DomainSecurity
+  url: security/alkami-domain-security.yml
+- type: LLMsTxt
+  url: llms/alkami-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
